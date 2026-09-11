@@ -4055,19 +4055,6 @@ img {
   transform: rotate(12deg);
 }
 
-{
-  position: absolute;
-  top: 90px;
-  right: -145px;
-  z-index: -1;
-  width: 440px;
-  height: 410px;
-  border-radius: 55% 45% 42% 58%;
-  background: rgba(237, 174, 161, 0.15);
-  filter: blur(20px);
-  transform: rotate(-12deg);
-}
-
 .service-category-removals .service-category-heading,
 .service-category-removals .service-category-grid {
   position: relative;
@@ -4718,6 +4705,7 @@ img {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 .service-preparation p {
   margin: 0;
   color: #686b63;
