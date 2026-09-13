@@ -5924,3 +5924,244 @@ img {
 .about-revies-section {
   scroll-margin-top: 110px;
 }
+
+@media(max-width: 650px) {
+  .home-page .services-branch {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-page .services-branch,
+  .home-page .booking-line-art {
+    display: none;
+  }
+
+  .home-page .footer-logo-wrap img {
+    mix-blend-mode: screen;
+  }
+}
+
+@media (max-width: 650px) {
+  .service-preparation img {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .service-preparation article {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-page-hero {
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-page .hero-visual {
+    width: 100%;
+    padding: 35px 22px 55px;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .home-page .hero-photo-frame {
+    width: 100% !important;
+    max-width: 520px;
+    height: 520px !important;
+    margin: 0 auto;
+    transform: none !important;
+    border-radius: 70px 8px 70px 8px !important;
+  }
+
+  .home-page .hero-photo {
+    border-radius: 61px 4px 61px 4px !important;
+  }
+
+  .home-page .hero-photo img {
+    object-position: center 45%;
+  }
+
+  .home-page .hero-leaf-sprig {
+    right: -80px !important;
+    bottom: -55px !important;
+    width: 240px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .service-category-specialty {
+    padding-bottom: 180px !important;
+  }
+
+  .specialy-section-leaf {
+    left: 18px;
+    bottom: 15px;
+    width: 155px;
+    opacity: 0.62;
+    transform: rotate(-5deg);
+    z-index: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-cta-leaf {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .site-footer {
+    padding-bottom: 195px;
+  }
+
+  .footer-newsletter {
+    position: relative;
+    z-index: 2;
+  }
+
+  .newsletter-form {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+  }
+
+  .footer-leaf-wrap {
+    right: 22px;
+    bottom: 22px;
+    width: 135px;
+    height: 145px;
+  }
+
+  .footer-leaf-wrap img {
+    width: 145px;
+    height: 145px;
+    mix-blend-mode: screen;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-grid {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-column,
+  .footer-connect,
+  .footer-newsletter {
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo-wrap {
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-legal {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-column a,
+  .footer-connect a {
+    justify-content: center;
+  }
+
+  .footer-links-flourish {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .newsletter-form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .service-help-card {
+    padding: 45px 25px 245px !important;
+  }
+
+  .service-help-copy {
+    padding: 0 !important;
+  }
+
+  .service-help-button,
+  .service-help-button:hover,
+  .service-help-button:active {
+    width: min(100%, 300px);
+    min-width: 0;
+    margin-top: 18px;
+    justify-self: center;
+    transform: none;
+  }
+
+  .service-help-leaf {
+    left: 12px;
+    bottom: 28px;
+    width: 105px;
+    opacity: 0.8;
+  }
+
+  .service-help-polish {
+    right: 5px;
+    bottom: 18px;
+    width: 205px;
+    transform: rotate(-7deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .about-instagram-gallery {
+    isolation: isolate;
+  }
+
+  .about-instagram-grid {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about-instagram-leaf {
+    z-index: 1;
+    width: 135px;
+    opacity: 0.55;
+  }
+
+  .about-instagram-leaf-left {
+    left: -65px;
+    bottom: -35px;
+    width: 145px;
+    transform: rotate(-5deg);
+  }
+
+  .about-instagram-leaf-right {
+    right: -55px;
+    bottom: -35px;
+    width: 135px;
+    transform: rotate(5deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .hours-card .about-info-leaf-left {
+    left: -35px;
+    transform: translate(20px, 18px) rotate(-3deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .policy-card .about-info-leaf-right {
+    right: -35px;
+    bottom: -65px;
+  }
+}
