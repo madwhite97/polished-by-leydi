@@ -1012,7 +1012,14 @@ function ServicesPage() {
         
         <section className="services-page-cta">
           <img
-            className="services-cta-leaf"
+            className="services-cta-leaf services-cta-leaf-left"
+            src={servicesSpecialtyLeaf}
+            alt=""
+            aria-hidden="true"
+          />
+
+          <img
+            className="services-cta-leaf services-cta-leaf-right"
             src={servicesSpecialtyLeaf}
             alt=""
             aria-hidden="true"
@@ -1859,6 +1866,16 @@ function App() {
         <Hero />
         <ServicesStrip />
         <GalleryPreview />
+
+        <div className="mobile-heart-divider" aria-hidden="true">
+          <svg viewBox="0 0 400 55" preserveAspectRatio="none">
+            <path d="M0 29 C55 12, 115 43, 180 27" />
+            <path d="M220 27 C285 11, 345 42, 400 24" />
+          </svg>
+
+          <span>♡</span>
+        </div>
+
         <AboutPreview />
         <ReviewsSection />
         <InstagramSection />
