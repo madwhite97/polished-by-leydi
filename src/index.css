@@ -6013,10 +6013,10 @@ img {
     right: auto !important;
     bottom: 5px !important;
     left: -25px !important;
-    opacity: 1 !important;
-    mix-blend-mode: multiply;
-    filter: invert(1) sepia(0.65) saturate(0.85)
-      hue-rotate(30deg) brightness(0.7) contrast(1.3);
+    opacity: 0.9 !important;
+    mix-blend-mode: screen;
+    filter: brightness(0.45) sepia(1) saturate(2.2)
+      hue-rotate(35deg) contrast(1.5);
   }
 
   .about-instagram-gallery {
@@ -6081,10 +6081,10 @@ img {
   }
 
   .removals-section-leaf {
-    right: auto !important;
-    bottom: -10px !important;
-    left: -70px !important;
-    width: 270px !important;
+    right: -45px !important;
+    bottom: -5px !important;
+    left: auto !important;
+    width: 220px !important;
     transform: scaleX(-1) rotate(3deg) !important;
   }
 
@@ -6114,13 +6114,13 @@ img {
   .service-help-polish {
     display: block !important;
     right: auto !important;
-    bottom: -5px !important;
-    left: -5px !important;
+    bottom: 15px !important;
+    left: 15px !important;
     z-index: 1;
     width: 225px !important;
     opacity: 1 !important;
     background: transparent;
-    mix-blend-mode: normal !important;
+    mix-blend-mode: screen !important;
     filter: none;
     transform: rotate(-7deg) !important;
   }
@@ -6146,42 +6146,75 @@ img {
     object-fit: contain;
     opacity: 1 !important;
     background: transparent;
-    mix-blend-mode: normal !important;
+    mix-blend-mode: screen !important;
     filter: none;
     transform: none;
+  }
+
+  .services-page-cta {
+    min-height: 300px;
+    padding: 80px 30px;
+    background:
+      radial-gradient(circle at 50% 50%, rgba(255, 247, 235, 0.16), transparent 35%),
+      #a8b486;
+  }
+
+  .services-page-cta p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }
+
+  .services-page-cta h2 {
+    margin: 0 0 14px;
+    font-size: 40px;
+  }
+
+  .services-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    min-width: 245px;
+    padding: 17px 26px;
+    background: #dd9295;
   }
 
   .services-page-cta .services-cta-leaf {
     display: block !important;
     position: absolute;
-    bottom: -45px !important;
+    bottom: -80px !important;
     z-index: 1;
-    width: 185px !important;
-    max-width: none !important;
-    opacity: 0.55 !important;
-    background: transparent;
-    mix-blend-mode: screen;
-    filter: grayscale(1) contrast(4) brightness(0.9);
+    width: 190px !important;
+    max-width: 190px !important;
+    opacity: 0.4 !important;
+    mix-blend-mode: normal;
+    filter: brightness(0.7);
     pointer-events: none;
   }
 
   .services-page-cta .services-cta-leaf-left {
     right: auto !important;
-    left: -45px !important;
-    transform: rotate(-4deg);
+    left: -50px !important;
+    transform: none;
   }
 
   .services-page-cta .services-cta-leaf-right {
-    right: -45px !important;
+    right: -50px !important;
     left: auto !important;
-    transform: scaleX(-1) rotate(-4deg);
+    transform: scaleX(-1);
   }
 
   /* Contact page */
+  .contact-decoration-right {
+    display: none !important;
+  }
+
   .contact-mobile-divider {
     display: block;
-    width: 340px;
-    max-width: 92%;
+    width: 420px;
+    max-width: 110%;
     height: auto;
     margin: 15px auto;
     object-fit: contain;
@@ -6307,35 +6340,42 @@ img {
   .newsletter-form input {
     width: 0;
     min-width: 0;
+    height: 100%;
     padding: 0 14px;
   }
 
   .newsletter-form button {
     flex: 0 0 74px;
     width: 74px;
+    height: 100%;
     padding: 0;
+    border-radius: 0 9px 9px 0;
     font-size: 11px;
   }
 
   .footer-leaf-wrap {
     display: block !important;
     position: relative;
-    right: 22px;
-    bottom: 22px;
-    width: 260px !important;
-    height: 145px;
-    margin: 35px auto 0 !important;
+    right: auto;
+    bottom: auto;
+    width: 300px !important;
+    height: auto;
+    margin: 40px auto 0 !important;
   }
 
   .footer-leaf-wrap img {
     content: url("./assets/footer-mobile-leaf.svg");
+    position: static;
+    inset: auto;
     display: block;
     width: 100% !important;
     height: auto;
+    margin: 0 auto;
     object-fit: contain;
     opacity: 1;
     filter: none;
     background: transparent;
     mix-blend-mode: lighten !important;
+    transform: none;
   }
 }
