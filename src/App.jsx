@@ -33,6 +33,7 @@ import bookingHelpPolish from "./assets/booking-help-polish.svg";
 import preparationCamera from "./assets/preparation-camera.svg";
 import preparationCalendar from "./assets/preparation-calendar.svg";
 import preparationClock from "./assets/preparation-clock.svg";
+import contactDivider from "./assets/contact-divider.svg";
 
 function Hero() {
   return (
@@ -1769,6 +1770,13 @@ function ContactPage() {
               </button>
             </form>
           </div>
+
+          <img
+            className="contact-mobile-divider"
+            src={contactDivider}
+            alt=""
+            aria-hidden="true"
+          />
           
           <div className="contact-card contact-studio-card">
             <p className="contact-card-eyebrow">Come Say Hello</p>

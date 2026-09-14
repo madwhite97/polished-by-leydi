@@ -6107,17 +6107,19 @@ img {
   }
 
   .service-help-leaf {
-    left: 12px;
-    bottom: 28px;
-    width: 105px;
-    opacity: 0.8;
+    display: none !important;
   }
 
   .service-help-polish {
-    right: 5px;
-    bottom: 18px;
-    width: 205px;
-    transform: rotate(-7deg);
+    display: block !important;
+    left: -10px;
+    right: auto !important;
+    bottom: -10px !important;
+    width: 220px !important;
+    opacity: 0.9;
+    mix-blend-mode: screen;
+    background: transparent;
+    transform: rotate(-7deg) !important;
   }
 }
 
@@ -6161,7 +6163,254 @@ img {
 
 @media (max-width: 650px) {
   .policy-card .about-info-leaf-right {
-    right: -35px;
-    bottom: -65px;
+    right: -75px;
+    bottom: -90px;
+  }
+}
+
+@media (max-width: 650px) {
+  .home-page .service-branch-left {
+    display: none;
+  }
+
+  .home-page .services-branch-right {
+    display: block;
+    right: -18px;
+    bottom: 65px;
+    width: 175px;
+    opacity: 0.72;
+    mix-blend-mode: screen;
+    filter: saturate(1.35) contrast(1.08);
+    transform: scaleX(-1);
+  }
+}
+
+@media (max-width: 650px) {
+  .home-page .booking-ling-art {
+    display: block;
+    right: -25px;
+    bottom: -8px;
+    width: 255px;
+    opacity: 0.88;
+    mix-blend-mode: screen;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-logo-wrap img {
+    mix-blend-mode: screen !important;
+    background: transparent !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .site-footer,
+  .home-page .site-footer {
+    padding: 45px 24px 65px;
+    text-align: center;
+  }
+
+  .footer-grid,
+  .home-page .footer-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    gap: 42px;
+  }
+
+  .footer-brand,
+  .footer-column,
+  .footer-connect,
+  .footer-nesletter,
+  .home-page .footer-brand,
+  .home-page .footer-newsletter {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .footer-logo-wrap,
+  .footer-legal {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-logo-wrap img {
+    content: url(".assets/polished-by-leydi-logo.png");
+    width: 220px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    mix-blend-mode: normal !important;
+  }
+
+  .footer-column a,
+  .footer-connect a {
+    justify-content: center;
+  }
+
+  .footer-links-flourish {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-newsletter p {
+    text-align: center;
+  }
+
+  .newsletter-form {
+    width: calc(100% - 20px);
+    max-width: 340px;
+    height: 48px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .newsletter-form input {
+    width: 0;
+    min-width: 0;
+    padding: 0 14px;
+  }
+
+  .newsletter-form button {
+    flex: 0 0 82px;
+    width: 82px;
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .footer-leaf-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .hours-card .about-info-leaf-left {
+    left: -80px;
+    bottom: -85px;
+    transform: rotate(-3deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .about-reviews-leaf {
+    opacity: 0.8;
+    mix-blend-mode: screen;
+    background: transparent;
+  }
+
+  .about-reviews-leaf-left {
+    left: -25px;
+    bottom: -15px;
+  }
+
+  .about-reviews-leaf-right {
+    right: -25px;
+    bottom: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-instagram-leaf {
+    opacity: 0.75;
+    mix-blend-mode: screen;
+    background: transparent;
+  }
+}
+
+@media (max-width: 650px) {
+  .repairs-section-leaf {
+    right: auto;
+    left: -45px;
+    transform: scaleX(-1);
+  }
+}
+
+@media (max-width: 650px) {
+  .specialty-section-leaf {
+    left: -55px !important;
+    right: auto !important;
+    bottom: -45px !important;
+    width: 175px !important;
+    transform: rotate(-5deg) !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .service-preparation article {
+    display: grid;
+    grid-template-columns: 72px 1fr !important;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .service-preparation article img {
+    display: block !important;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    background: transparent;
+    mix-blend-mode: screen;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-reviews-leaf-left {
+    left: auto !important;
+    right: -25px !important;
+    bottom: -15px !important;
+  }
+
+  .about-reviews-leaf-right {
+    right: auto !important;
+    left: -25px !important;
+    bottom: 5px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-instagram-leaf-left,
+  .about-instagram-leaf-right {
+    bottom: -65px !important;
+  }
+}
+
+.contact-mobile-divider {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .contact-mobile-divider {
+    display: block;
+    width: 180px;
+    height: auto;
+    margin: 10px auto;
+    object-fit: contain;
+    background: transparent;
+    mix-blend-mode: screen;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer-leaf-wrap {
+    display: block !important;
+    position: relative;
+    width: 150px;
+    margin: 35px auto 0;
+  }
+
+  .footer-leaf-wrap img {
+    content: url("./assets/footer-mobile-leaf.svg");
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    mix-blend-mode: screen;
   }
 }
