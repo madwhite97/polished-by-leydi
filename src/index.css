@@ -2985,8 +2985,8 @@ img {
 }
 
 .hours-card .about-info-leaf-left {
-  left: -70px;
-  bottom: -115px;
+  left: -105px;
+  bottom: -145px;
   transform: rotate(-3deg);
 }
 
@@ -3837,7 +3837,7 @@ img {
 
 .extensions-section-leaf {
   position: absolute;
-  top: 135px;
+  top: 105px;
   bottom: auto;
   left: max(-140px, calc((100% - 1180px) / 2 - 240px));
   z-index: 1;
@@ -5701,7 +5701,7 @@ img {
 
 @media (min-width: 951px) {
   .contact-decoration-left {
-    top: 35px;
+    top: -75px;
   }
 }
 
