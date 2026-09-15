@@ -2985,9 +2985,9 @@ img {
 }
 
 .hours-card .about-info-leaf-left {
-  left: -120px;
+  left: -70px;
   bottom: -55px;
-  transform: translate(-30px, 18px) rotate(-3deg);
+  transform: translateY(18px) rotate(-3deg);
 }
 
 .policy-card .about-info-leaf-right {
@@ -3189,7 +3189,7 @@ img {
 }
 
 .about-reviews-leaf-right {
-  right: 135px;
+  right: 90px;
   bottom: 20px;
   width: 350px;
   transform: rotate(4deg);
@@ -3729,8 +3729,8 @@ img {
 
 .manicure-section-leaf {
   position: absolute;
-  right: 200px;
-  bottom: 5px;
+  right: 35px;
+  bottom: -45px;
   z-index: 3;
   width: 350px;
   height: auto;
@@ -3837,9 +3837,9 @@ img {
 
 .extensions-section-leaf {
   position: absolute;
-  top: 75px;
+  top: 170px;
   bottom: auto;
-  left: max(150px, calc((100% - 1180px) / 2 - 220px));
+  left: max(40px, calc((100% - 1180px) / 2 - 80px));
   z-index: 1;
   width: 390px;
   height: auto;
@@ -4189,7 +4189,7 @@ img {
   height: auto;
   pointer-events: none;
   transform-origin: bottom left;
-  transform: translate(55px, -165px) scale(1.85) rotate(-3deg);
+  transform: translate(55px, -220px) scale(1.85) rotate(-3deg);
 }
 
 @media (max-width: 800px) {
@@ -4549,7 +4549,8 @@ img {
 }
 
 .removals-section-leaf {
-  right: -95px;
+  right: auto;
+  left: -95px;
 }
 
 .service-help-copy > p {
@@ -5409,7 +5410,7 @@ img {
 
 .gallery-work-leaf-right {
   right: -75px;
-  bottom: 190px;
+  bottom: -20px;
   transform: rotate(8deg);
 }
 
@@ -5837,20 +5838,6 @@ img {
   font-size: 13px;
 }
 
-.home-page .footer-column h2,
-.home-page .footer-newsletter h2 {
-  font-size: 14px;
-}
-
-.home-page .footer-column a {
-  font-size: 14px;
-}
-
-.home-page .footer-newsletter p,
-.home-page .footer-legal p {
-  font-size: 13px;
-}
-
 @media (max-width: 650px) {
   .home-page .hero .eyebrow {
     font-size: 10px;
@@ -5870,35 +5857,6 @@ img {
 
   .home-page .instagram-heading a {
     font-size: 13px;
-  }
-}
-
-.home-page .site-footer {
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.home-page .footer-grid {
-  width: 100%;
-  max-width: none;
-  grid-template-columns: 1.45fr 0.65fr 0.65fr 1.15fr 1.55fr;
-}
-
-.home-page .footer-brand {
-  justify-self: start;
-}
-
-.home-page .footer-newsletter {
-  justify-self: end;
-  width: 100%;
-  max-width: 380px;
-}
-
-@media (max-width: 900px) {
-  .home-page .footer-brand,
-  .home-page .footer-newsletter {
-    justify-self: stretch;
-    max-width: none;
   }
 }
 
