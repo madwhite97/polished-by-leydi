@@ -2985,8 +2985,8 @@ img {
 }
 
 .hours-card .about-info-leaf-left {
-  left: -500px;
-  bottom: -535px;
+  left: -130px;
+  bottom: -135px;
   transform: rotate(-3deg);
 }
 
@@ -6387,5 +6387,13 @@ img {
     background: transparent;
     mix-blend-mode: lighten !important;
     transform: none;
+  }
+}
+
+/* Preserve the desktop leaf placement when browser zoom makes the viewport narrow. */
+@media (max-width: 650px) and (hover: hover) and (pointer: fine) {
+  .hours-card .about-info-leaf-left {
+    left: -130px;
+    bottom: -135px;
   }
 }
