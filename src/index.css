@@ -2985,9 +2985,9 @@ img {
 }
 
 .hours-card .about-info-leaf-left {
-  left: -70px;
-  bottom: -55px;
-  transform: translateY(18px) rotate(-3deg);
+  left: -35px;
+  bottom: -85px;
+  transform: rotate(-3deg);
 }
 
 .policy-card .about-info-leaf-right {
@@ -3729,8 +3729,8 @@ img {
 
 .manicure-section-leaf {
   position: absolute;
-  right: 35px;
-  bottom: -45px;
+  right: -15px;
+  bottom: 0;
   z-index: 3;
   width: 350px;
   height: auto;
@@ -3839,7 +3839,7 @@ img {
   position: absolute;
   top: 170px;
   bottom: auto;
-  left: max(40px, calc((100% - 1180px) / 2 - 80px));
+  left: max(-140px, calc((100% - 1180px) / 2 - 240px));
   z-index: 1;
   width: 390px;
   height: auto;
@@ -4550,7 +4550,11 @@ img {
 
 .removals-section-leaf {
   right: auto;
-  left: -95px;
+  left: calc(-66.6667% + 20px);
+}
+
+.service-category-removals {
+  overflow: visible;
 }
 
 .service-help-copy > p {
