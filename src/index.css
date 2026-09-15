@@ -6394,6 +6394,6 @@ img {
 @media (hover: hover) and (pointer: fine) {
   .contact-decoration-right {
     right: -135px;
-    bottom: -75px;
+    bottom: 25px;
   }
 }
