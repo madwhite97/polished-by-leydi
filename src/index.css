@@ -2985,9 +2985,9 @@ img {
 }
 
 .hours-card .about-info-leaf-left {
-  left: -130px;
-  bottom: -135px;
-  transform: rotate(-3deg);
+  left: -70px;
+  bottom: -55px;
+  transform: translateY(18px) rotate(-3deg);
 }
 
 .policy-card .about-info-leaf-right {
@@ -6390,10 +6390,10 @@ img {
   }
 }
 
-/* Preserve the desktop leaf placement when browser zoom makes the viewport narrow. */
-@media (max-width: 650px) and (hover: hover) and (pointer: fine) {
-  .hours-card .about-info-leaf-left {
-    left: -130px;
-    bottom: -135px;
+/* Keep desktop contact decorations correct even when browser zoom narrows the viewport. */
+@media (hover: hover) and (pointer: fine) {
+  .contact-decoration-right {
+    right: -135px;
+    bottom: -75px;
   }
 }
