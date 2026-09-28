@@ -5206,8 +5206,17 @@ img {
 }
 
 @media (max-width: 1050px) {
+  .gallery-work {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
   .gallery-page-grid {
+    width: 100%;
+    max-width: none;
     columns: 3;
+    column-gap: 18px;
+    margin: 0 auto;
   }
 
   .gallery-booking-card {
@@ -6417,9 +6426,9 @@ img {
   }
 
   .hero-photo-frame {
-    width: 520px !important;
-    height: 630px !important;
-    transform: translate(35px) !important;
+    width: 470px !important;
+    height: 570px !important;
+    transform: translateX(20px) !important;
   }
 
   .about-page-hero {
@@ -6431,25 +6440,27 @@ img {
   }
 
   .about-reviews-leaf-left {
-    left: -140px !important;
+    left: -75px !important;
   }
 
-  .about-reviews-leaf-rightv {
-    right: -140px !important;
+  .about-reviews-leaf-right {
+    right: -40px !important;
+    transform: translateX(120px);
   }
 
   .about-instagram-leaf-left {
-    transform: translate(-35px, 45px);
+    transform: translate(-5px, 45px);
   }
 
   .about-instagram-leaf-right {
-    transform: translateX(25px);
+    transform: translateX(45px);
   }
 
   .gelx-grid .service-menu-card:last-child {
     grid-column: 1 / -1;
     justify-self: center;
-    width: calc(50% - 15px);
+    width: 100%;
+    max-width: 445px;
   }
 
   .service-menu-card:nth-child(13) {
@@ -6459,8 +6470,8 @@ img {
   }
 
   .specialty-leaf {
-    left: -45px !important;
-    top: 25px !important;
+    left: -110px !important;
+    top: -80px !important;
     transform: none !important;
     z-index: 0 !important;
   }
@@ -6489,6 +6500,42 @@ img {
 
   .about-info-leaf-right {
     transform: translateY(100px);
+  }
+
+  .services-grid > .service-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% -28px) / 2);
+  }
+
+  .contact-hours-leaf-right {
+    top: auto;
+    bottom: -105px;
+    right: -35px;
+  }
+
+  .navbar,
+  .navbar-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 38px;
+    padding-right: 38px;
+    box-sizing: border-box;
+  }
+
+  .nav-links {
+    gap: 24px;
+  }
+
+  .nav-logo img {
+    width: 225px;
+    height: auto;
+  }
+
+  .nav-book-button {
+    padding-left: 25px;
+    padding-right: 25px;
+    white-space: nowrap;
   }
 }
 

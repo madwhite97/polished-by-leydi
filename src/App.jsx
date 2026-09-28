@@ -1529,7 +1529,7 @@ function GalleryPage() {
             <div className="gallery-page-grid">
               {galleryItems.map((item, index) => (
                 <figure
-                  className={`gallery-grid-item gallery-frid-item-${index % 5}`}
+                  className={`gallery-grid-item gallery-grid-item-${index % 5}`}
                     key={`${item.src}-${index}`}
                 >
                   <img src={item.src} alt={item.alt} loading="lazy" />
