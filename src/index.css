@@ -5606,6 +5606,12 @@ img {
 }
 
 @media (min-width: 769px) and (max-width: 1100px) {
+  /* Shift the header content 20px left while retaining its available width. */
+  .site-header {
+    padding-left: calc(clamp(24px, 6vw, 72px) - 20px);
+    padding-right: calc(clamp(24px, 6vw, 72px) + 20px);
+  }
+
   .services-grid {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -5622,10 +5628,31 @@ img {
     grid-column: 4 / span 2;
   }
 
+  /* Keep the tablet photo inside its column with space on both sides. */
+  .hero-copy,
+  .hero-visual {
+    min-width: 0;
+  }
+
+  .hero-copy {
+    padding-left: clamp(28px, 4vw, 44px);
+    padding-right: 24px;
+  }
+
+  .hero .eyebrow {
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .hero-visual {
+    padding-left: 24px;
+    padding-right: 28px;
+  }
+
   .hero-photo-frame {
-    width: 470px !important;
+    width: min(470px, 100%) !important;
     height: 570px !important;
-    transform: translateX(20px) !important;
+    transform: none !important;
   }
 
   .about-page-hero {
@@ -5642,28 +5669,15 @@ img {
 
   .about-reviews-leaf-right {
     right: -40px !important;
-    transform: translateX(120px);
+    transform: translateX(90px);
   }
 
   .about-instagram-leaf-left {
-    transform: translate(-5px, 45px);
+    transform: translate(-5px, 15px);
   }
 
   .about-instagram-leaf-right {
     transform: translateX(45px);
-  }
-
-  .gelx-grid .service-menu-card:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: 100%;
-    max-width: 445px;
-  }
-
-  .service-menu-card:nth-child(13) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc(50% - 15px);
   }
 
   .specialty-leaf {
@@ -5698,11 +5712,6 @@ img {
     transform: translateY(100px);
   }
 
-  .services-grid > .service-card:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-
   .contact-hours-leaf-right {
     top: auto;
     bottom: -105px;
@@ -5732,6 +5741,20 @@ img {
     padding-right: 25px;
     white-space: nowrap;
   }
+
+  .service-category-specialty .specialty-section-leaf {
+    top: -35px;
+    right: auto;
+    bottom: auto;
+    left: -65px;
+    width: 220px;
+    transform: none;
+    z-index: 1;
+  }
+
+  .contact-decoration-right {
+    translate: 0 100px;
+  }
 }
 
 .services-hero-leaf-left,
@@ -5742,5 +5765,23 @@ img {
 
 .services-hero-leaf-right {
   transform: translateY(65px);
+}
+
+/* Center the final Gel-X card only while its grid has two columns. */
+@media (min-width: 701px) and (max-width: 1000px) {
+  .service-category-extensions .service-category-grid > .upgraded-service-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 23px) / 2);
+  }
+}
+
+/* Center Nail Fix within the removals grid's two-column layout. */
+@media (min-width: 651px) and (max-width: 1000px) {
+  .service-category-removals .service-category-grid > .upgraded-service-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 18px) / 2);
+  }
 }
 
