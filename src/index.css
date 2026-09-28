@@ -5608,7 +5608,7 @@ img {
 @media (min-width: 769px) and (max-width: 1100px) {
   /* Shift the header content 20px left while retaining its available width. */
   .site-header {
-    padding-left: calc(clamp(24px, 6vw, 72px) - 75px;);
+    padding-left: calc(clamp(24px, 6vw, 72px) - 95px;);
     padding-right: calc(clamp(24px, 6vw, 72px) + 75px);
   }
 
@@ -5677,7 +5677,7 @@ img {
   }
 
   .about-reviews-leaf-right {
-    right: -40px !important;
+    right: -40px;
     translate: -35px 0;
   }
 
