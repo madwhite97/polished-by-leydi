@@ -5677,8 +5677,7 @@ img {
   }
 
   .about-reviews-leaf-right {
-    right: -40px;
-    translate: -65px 0;
+    right: -80px;
   }
 
   .about-instagram-leaf-left {
@@ -5763,6 +5762,10 @@ img {
 
   .contact-decoration-right {
     translate: 0 100px;
+  }
+
+  .site-header > * {
+    translate: -15px 0;
   }
 }
 
