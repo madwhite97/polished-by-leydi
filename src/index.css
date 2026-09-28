@@ -6397,3 +6397,107 @@ img {
     bottom: 25px;
   }
 }
+
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .service-card {
+    grid-column: span 2;
+  }
+
+  .service-card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .service-card:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+
+  .hero-photo-frame {
+    width: 520px !important;
+    height: 630px !important;
+    transform: translate(35px) !important;
+  }
+
+  .about-page-hero {
+    padding-top: 110px;
+  }
+
+  .policy-card .about-info-leaf-right {
+    transform: translateY(30px);
+  }
+
+  .about-reviews-leaf-left {
+    left: -140px !important;
+  }
+
+  .about-reviews-leaf-rightv {
+    right: -140px !important;
+  }
+
+  .about-instagram-leaf-left {
+    transform: translate(-35px, 45px);
+  }
+
+  .about-instagram-leaf-right {
+    transform: translateX(25px);
+  }
+
+  .gelx-grid .service-menu-card:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 15px);
+  }
+
+  .service-menu-card:nth-child(13) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 15px);
+  }
+
+  .specialty-leaf {
+    left: -45px !important;
+    top: 25px !important;
+    transform: none !important;
+    z-index: 0 !important;
+  }
+
+  .specialy-section-header,
+  .specialty-section-header *,
+  .specialty-grid,
+  .specialty-grid * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .gallery-grid {
+    width: 92%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-item {
+    width: 100%;
+  }
+
+  .about-info-leaf-right {
+    transform: translateY(100px);
+  }
+}
+
+.services-hero-leaf-left,
+.services-hero-leaf-right,
+.contact-hero-leaf-right {
+  z-index: 1 !important;
+}
+
+.services-hero-leaf-right {
+  transform: translateY(65px);
+}
